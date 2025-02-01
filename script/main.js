@@ -304,19 +304,7 @@ const resolveFetch = () => {
 
 resolveFetch().then(animationTimeline());
 
-const audio = document.getElementById('background-music');
-
-// Pausar la música
-function pauseMusic() {
-  audio.pause();
-}
-
-// Reproducir la música
-function playMusic() {
+document.addEventListener('click', () => {
+  const audio = document.getElementById('background-music');
   audio.play();
-}
-
-// Cambiar el volumen
-function setVolume(volume) {
-  audio.volume = volume;
-}
+});
