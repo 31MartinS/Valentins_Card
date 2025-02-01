@@ -304,7 +304,8 @@ const resolveFetch = () => {
 
 resolveFetch().then(animationTimeline());
 
-document.addEventListener('click', () => {
-  const audio = document.getElementById('background-music');
-  audio.play();
+// Reproducir la música al hacer clic en el botón
+document.getElementById('playButton').addEventListener('click', () => {
+  const audio = document.getElementById('backgroundMusic');
+  audio.play();  // Inicia la reproducción de la música
 });
