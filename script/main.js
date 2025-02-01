@@ -304,8 +304,11 @@ const resolveFetch = () => {
 
 resolveFetch().then(animationTimeline());
 
-// Reproducir la música al hacer clic en el botón
-document.getElementById('playButton').addEventListener('click', () => {
-  const audio = document.getElementById('backgroundMusic');
-  audio.play();  // Inicia la reproducción de la música
-});
+    // Reproducir música y mostrar contenido del body
+    document.getElementById('playButton').addEventListener('click', () => {
+      const audio = document.getElementById('backgroundMusic');
+      audio.play(); // Inicia la reproducción de la música
+
+      // Muestra el contenido de la página
+      document.querySelector('.container').style.visibility = 'visible';
+    });
