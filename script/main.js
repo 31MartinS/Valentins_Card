@@ -1,11 +1,12 @@
-// Reproducir la música al hacer clic en el botón
-document.getElementById('playButton').addEventListener('click', () => {
-  const audio = document.getElementById('backgroundMusic');
-  audio.play();  // Inicia la reproducción de la música
-});
-
 // Animation Timeline
 const animationTimeline = () => {
+
+    // Reproducir la música al hacer clic en el botón
+  document.getElementById('playButton').addEventListener('click', () => {
+    const audio = document.getElementById('backgroundMusic');
+    audio.play();  // Inicia la reproducción de la música
+  });
+
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
