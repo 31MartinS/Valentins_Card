@@ -12,7 +12,7 @@ const animationTimeline = () => {
     .join("</span><span>")}</span>`;
 
   // Código para reproducir la música de fondo
-  const audio = new Audio('ipma.ogg');
+  const audio = new Audio('audio/ipma.ogg');
   audio.preload = 'auto'; // Pre-cargar el audio
   audio.loop = true; // Repetir la música
 
